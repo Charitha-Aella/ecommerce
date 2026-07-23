@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+      <h2>Admin Dashboard</h2>
+
+      <div class="nav-links">
+
+        <a href="index.html">
+          Store
+        </a>
+
+        <button onclick="logout()">
+          Logout
+        </button>
+
+      </div>
+
+    </nav>
+
+    <!-- FORM -->
+
+    <section class="admin-section">
+
+      <h1 class="page-title">
+        Product Management
+      </h1>
+
+      <div class="admin-form">
+
+        <input
+          type="text"
+          id="productName"
+          placeholder="Product Name"
+        >
+
+        <input
+          type="number"
+          id="productPrice"
+          placeholder="Product Price"
+        >
+
+        <input
+          type="text"
+          id="productImage"
+          placeholder="Image URL"
+        >
+
+        <button onclick="addProduct()">
+          Add Product
+        </button>
+
+      </div>
+
+      <!-- PRODUCTS -->
+
+      <div
+        class="products-container"
+        id="adminProductsContainer"
+      ></div>
+
+    </section>
+
+  </div>
+
+  <script src="js/auth.js"></script>
+
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
